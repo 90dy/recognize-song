@@ -1,0 +1,29 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+      "eslint:recommended",
+      "react-app",
+      "standard",
+      "plugin:import/errors",
+      "plugin:react/recommended",
+      "plugin:flowtype/recommended"
+    ],
+    "plugins": ["react", "jsx-a11y", "import", "flowtype"],
+    "settings": {
+      "import/resolver": {
+        "babel-module": {}
+      }
+    },
+    "rules": {
+      "no-console": "off",
+      "linebreak-style": "off",
+      "comma-dangle": ["off", "always-multiline"],
+      "no-multi-spaces": "off",
+      "no-unused-vars": "warn",
+      "react/prop-types": "off",
+      "react/display-name": "warn",
+      "flowtype/no-types-missing-file-annotation": "off",
+      "max-len": ["warn", 150]
+    }
+  }
+  

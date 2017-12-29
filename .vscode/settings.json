@@ -1,0 +1,7 @@
+{
+    "javascript.validate.enable": false,
+    "prettier.eslintIntegration": true,
+    "flow.useNPMPackagedFlow": true,
+    "flow.pathToFlow": "./node_modules/flow-bin",
+    "eslint.autoFixOnSave": true
+}
