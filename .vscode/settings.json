@@ -3,5 +3,9 @@
     "prettier.eslintIntegration": true,
     "flow.useNPMPackagedFlow": true,
     "flow.pathToFlow": "./node_modules/flow-bin",
-    "eslint.autoFixOnSave": true
+    "eslint.autoFixOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.autoIndent": true,
+    "editor.formatOnSave": true
 }

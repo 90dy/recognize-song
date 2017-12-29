@@ -1,19 +1,21 @@
 {
-  "name": "create-js-standard-project",
+  "name": "recognize-songs",
   "version": "1.0.0",
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/godfpsn/create-js-standard-project.git"
+    "url": "git+https://github.com/gponsinet/recognize-song.git"
   },
   "author": "godefroy.ponsinet@outlook.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/godfpsn/create-js-standard-project/issues"
+    "url": "https://github.com/gponsinet/recognize-song/issues"
   },
-  "homepage": "https://github.com/godfpsn/create-js-standard-project#readme",
+  "homepage": "https://github.com/gponsinet/recognize-song#readme",
   "main": "index.js",
   "scripts": {
+    "start": "babel-node index.js",
+    "from-directory": "babel-node from-directory.js",
     "linter": "standard **/src/**/*.js --fix --verbose | snazzy",
     "eslint": "./node_modules/.bin/eslint product/app/*/src/**/*.js product/app/ngp-manager/api/src/**/*.js product/app/ngp-manager/ui/src/**/*.js product/api/*/src/**/*.js ",
     "commit": "npm run linter && git commit"
@@ -25,6 +27,8 @@
     ]
   },
   "dependencies": {
+    "acrcloud": "^1.2.0",
+    "ffmetadata": "^1.4.0",
     "flow-bin": "^0.61.0",
     "tcomb": "^3.2.24"
   },
@@ -36,6 +40,8 @@
     "babel-plugin-import": "^1.6.2",
     "babel-plugin-module-resolver": "^3.0.0",
     "babel-plugin-tcomb": "^0.3.26",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
